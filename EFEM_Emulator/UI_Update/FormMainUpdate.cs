@@ -74,7 +74,7 @@ namespace EFEM_Emulator.UI_Update
                 }
                 else
                 {
-                    W.AppendText(msg);
+                    W.AppendText(msg+"\n");
                     if (W.Text.Length > 1000)
                     {
                         W.Text = W.Text.Substring(W.Text.Length -1000);

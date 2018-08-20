@@ -23,7 +23,7 @@ namespace EFEM_Emulator
 
         public void On_CommandMessage(string msg)
         { 
-            FormMainUpdate.LogUpdate(msg+"\n");
+            FormMainUpdate.LogUpdate(msg);
         }
 
         public void On_Connection_Connected()
