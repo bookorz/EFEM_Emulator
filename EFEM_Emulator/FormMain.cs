@@ -48,5 +48,10 @@ namespace EFEM_Emulator
         {
             RorzeInterface ctrl = new RorzeInterface(this);
         }
+
+        private void EVTSend_btn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
