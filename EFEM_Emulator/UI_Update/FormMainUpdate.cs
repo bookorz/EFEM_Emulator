@@ -75,9 +75,10 @@ namespace EFEM_Emulator.UI_Update
                 else
                 {
                     W.AppendText(msg+"\n");
-                    if (W.Text.Length > 1000)
+                    if (W.Lines.Length > 1000)
                     {
-                        W.Text = W.Text.Substring(W.Text.Length -1000);
+                        W.Select(0, W.GetFirstCharIndexFromLine(W.Lines.Length - 1000));
+                        W.SelectedText = "";
                     }
                     W.ScrollToCaret();
                 }
