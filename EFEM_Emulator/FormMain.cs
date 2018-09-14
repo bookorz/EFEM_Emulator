@@ -13,11 +13,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TransferControl.Engine;
 using TransferControl.Management;
+using DIOControl;
 
 namespace EFEM_Emulator
 {
     public partial class FormMain : Form, IEFEMControl, IUserInterfaceReport
     {
+       
+
         public FormMain()
         {
             InitializeComponent();
@@ -127,6 +130,26 @@ namespace EFEM_Emulator
         public void On_Mode_Changed(string Mode)
         {
            
+        }
+
+        public void On_Data_Chnaged(string Parameter, string Value)
+        {
+           
+        }
+
+        public void On_Connection_Error(string DIOName, string ErrorMsg)
+        {
+            FormMainUpdate.LogUpdate(DIOName + ":" + ErrorMsg);
+        }
+
+        public void On_Connection_Status_Report(string DIOName, string Status)
+        {
+            FormMainUpdate.LogUpdate(DIOName + ":" + Status);
+        }
+
+        public void On_Alarm_Happen(string DIOName, string ErrorCode)
+        {
+            
         }
     }
 }

@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransferControl", "..\Trans
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SANWA", "..\SANWAFunction\SANWA\SANWA\SANWA.csproj", "{4EED2ED4-A72E-4F24-8D80-EF2F0B24FCF1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIOControl", "..\DIOControl\DIOControl\DIOControl.csproj", "{21ADFCFC-11C7-4982-AF57-09002ED8E961}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{4EED2ED4-A72E-4F24-8D80-EF2F0B24FCF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4EED2ED4-A72E-4F24-8D80-EF2F0B24FCF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4EED2ED4-A72E-4F24-8D80-EF2F0B24FCF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21ADFCFC-11C7-4982-AF57-09002ED8E961}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21ADFCFC-11C7-4982-AF57-09002ED8E961}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21ADFCFC-11C7-4982-AF57-09002ED8E961}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21ADFCFC-11C7-4982-AF57-09002ED8E961}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
